@@ -26,7 +26,12 @@
           "url":"http://instagram.com/orkuns",
           "className":"fa fa-instagram"
         },
-
+        {
+          "name":"Twitter",
+          "url":"https://twitter.com/OrkunS9",
+          "className":"fa fa-twitter"
+        },
+        
         {
           "name":"github",
           "url":"https://github.com/OrkunSA",
@@ -35,7 +40,7 @@
         {
           "name":"medium",
           "url":"https://medium.com/@orkunsalam",
-          "className":"fab fa-medium"
+          "className":"fa fa-medium"
         }
       ]
     },
