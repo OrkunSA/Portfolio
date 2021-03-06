@@ -1,12 +1,9 @@
 import React, { Component } from "react";
-// import Typist from "react-typist";
+import Typist from "react-typist";
 
 class Header extends Component {
   render() {
     if (this.props.data) {
-      var name = this.props.data.name;
-      var occupation = this.props.data.occupation;
-      var city = this.props.data.address.city;
       var networks = this.props.data.social.map(function (network) {
         return (
           <li key={network.name}>
@@ -64,11 +61,14 @@ class Header extends Component {
         />
         <div className="row banner">
           <div className="banner-text">
-            <h1 className="responsive-headline">I'm {name}.</h1>
+            <Typist>
+              <h1 className="responsive-headline">I'm Orkun Saglam.</h1>
 
-            <h3>
-              I'm a <span>{city}</span> based <span>{occupation}</span>,
-            </h3>
+              <h3>
+                I'm a <span>Austin</span> based{" "}
+                <span>Full Stack Developer</span>,
+              </h3>
+            </Typist>
             <hr />
             <ul className="social">{networks}</ul>
           </div>
