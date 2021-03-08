@@ -62,9 +62,12 @@ class Header extends Component {
         <div className="row banner">
           <div className="banner-text">
             <Typist>
-              <h1 className="responsive-headline">I'm Orkun Saglam.</h1>
-
+              <h1 className="responsive-headline">
+                <span>I'm Orkun Saglam.</span>
+              </h1>
+              <Typist.Delay ms={500} />
               <h3>
+                <Typist.Backspace count={8} delay={200} />
                 I'm a <span>Austin</span> based{" "}
                 <span>Full Stack Developer</span>,
               </h3>

@@ -3,7 +3,7 @@
       "name":"Orkun Saglam",
       "occupation":"Full Stack Developer",
       "image":"profile-pic.JPG",
-      "bio":"I am a husband to Kallie and father of 2 small dogs -Jemima & Aya-, with to be continued",
+      "bio":"I am a husband to Kallie and father of 2 small dogs -Jemima & Aya-. Immigrated to the US in 2015. A love of problem-solving sparked my interest in software development. Currently, working for a Austin based tech startup, The Guild, specializing in hospitality.  ",
       "contactmessage":"Think I'd be a good fit for your team? I'd love to hear from you, give me a shout by email or by using the form below if you'd like to get in contact with me.",
       "email": "c.orkun.s@gmail.com",
       "phone": "(512) 649-6399",
@@ -45,43 +45,64 @@
       ]
     },
     "resume":{
-      "skillmessage":"",
+      "skillmessage":"Web development is like climbing an endless mountain and these are the items in my backpack so far.",
       "education":[
         {
           "school":"Flatiron School",
           "degree":"Software Engineering",
-          "graduated":"February 2021",
-          "description":""
+          "graduated":"February 2021"        },
+        {
+          "school":"Istanbul Unversity",
+          "degree":"Bachelor of Tourism and Hospitality Management ",
+          "graduated":"February 2013"
         }
       ],
       "work":[
         {
           "company":"The Guild",
-          "title": "Admin",
+          "title": " IT Administrator/Auditor",
           "years": "August 2017 - Present",
-          "description": "Provided guidance and orientation to new hires on how to operate new software and computer equipment.Monitored and maintained computer systems and networks. Troubleshoot any issues that arose. Responsible for auditing accounts the company needed."
+          "description": "Provide guidance and orientation to new hires on how to operate new software and computer equipment, Monitor and maintain computer systems and networks, troubleshooting any issues that arise, Overseeing guest accounts to ensure accuracy of billing"
+        },
+        {
+          "company":"JW Marriott",
+          "title": " Night Auditor",
+          "years": "January 2015 - February 2016",
+          "description": "Generated daily financial reports aimed at increasing company profits and reduce costs, Managed and maintained the hotel's reservation systems, Utilized various computer applications to launch and complete the auditing process "
         }
       ],
       "skills":[
      
         {
           "name":"React Js",
-          "description":"",
           "image":"react.jpg"
         },
         {
+          "name":"Redux",
+          "image":"redux.png"
+        },
+        {
+          "name":"Ruby",
+          "image":"ruby.jpg"
+        },
+        {
+          "name":"Rails",
+          "image":"rails.png"
+        },
+        {
           "name":"Bootstrap 4",
-          "description":"",
           "image":"bootstrap.jpg"
         },
         {
+          "name":"Bulma Framework",
+          "image":"bulma.jpeg"
+        },
+        {
           "name":"PostgreSQL",
-          "description":"",
-          "image":"mongo.jpg"
+          "image":"postgres.png"
         },
         {
           "name":"Heroku",
-          "description":"",
           "image":"heroku.jpg"
         }
       ]
