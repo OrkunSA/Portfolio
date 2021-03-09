@@ -111,21 +111,21 @@
       "projects": [
         {
           "title":"Gamers Vault",
-          "category":"",
-          "image":"",
-          "url":""
+          "category":"A gaming website where users can browse through 500,000+ games and perform CRUD actions.",
+          "image":"gamers_vault.png",
+          "url":"https://youtu.be/n4-kXK4vx3k"
         },
         {
           "title":"Nice Reads",
-          "category":"",
-          "image":"",
-          "url":""
+          "category":"A vanilla JavaScript app with Rails backend API for users to keep track of favorite books and perform CRUD actions on their book collection. ",
+          "image":"nice_reads.png",
+          "url":"https://youtu.be/O_Qz2m-mAYM"
         },
         {
           "title":"Movie Box",
-          "category":"",
-          "image":"",
-          "url":""
+          "category":"A Rails app for keeping track of favorite movies and creating lists to manage and organize those movies",
+          "image":"movie_box.png",
+          "url":"https://youtu.be/9jX6Yq4Uht8"
         }
       ]
     }
