@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import About from "./components/About";
 import Resume from "./components/Resume";
 import Work from "./components/Work";
+import Contact from "./components/Contact";
 
 class App extends React.Component {
   constructor(props) {
@@ -48,6 +49,7 @@ class App extends React.Component {
         <About data={this.state.resumeData.main} />
         <Resume data={this.state.resumeData.resume} />
         <Work data={this.state.resumeData.portfolio} />
+        <Contact data={this.state.resumeData.main} />
       </div>
     );
   }
