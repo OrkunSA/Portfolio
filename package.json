@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.21.1",
     "dotenv": "^8.2.0",
+    "emailjs-com": "^2.6.4",
     "jquery": "^3.6.0",
     "react": "^17.0.1",
     "react-dev-utils": "^11.0.4",
@@ -15,6 +16,7 @@
     "react-ga": "^3.3.0",
     "react-scripts": "4.0.3",
     "react-typist": "^2.0.5",
+    "sweetalert2": "^10.15.5",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
