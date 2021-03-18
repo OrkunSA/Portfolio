@@ -2,6 +2,16 @@ import React, { Component } from "react";
 import Typist from "react-typist";
 
 class Header extends Component {
+  state = {
+    click: false,
+  };
+
+  closeMobileMenu = () => {
+    this.setState({
+      click: !this.state.click,
+    });
+  };
+
   render() {
     if (this.props.data) {
       var networks = this.props.data.social.map(function (network) {
@@ -43,7 +53,7 @@ class Header extends Component {
             </li>
             <li>
               <a className="smoothscroll" href="#portfolio">
-                Works
+                Projects
               </a>
             </li>
             <li>
@@ -54,11 +64,16 @@ class Header extends Component {
           </ul>
         </nav>
         <video
-          src="/videos/mixkit-view-of-the-horizon-in-the-sea-while-a-sailboat-4477.mp4"
           autoPlay
           loop
           muted
-        />
+          preload="auto"
+          width="100%"
+          height="100%"
+          playsinline=""
+        >
+          <source src="/videos/mixkit-view-of-the-horizon-in-the-sea-while-a-sailboat-4477.mp4" />
+        </video>
         <div className="row banner">
           <div className="banner-text">
             <Typist>
@@ -68,8 +83,8 @@ class Header extends Component {
               <Typist.Delay ms={500} />
               <h3>
                 <Typist.Backspace count={8} delay={200} />
-                I'm a <span>Austin</span> based{" "}
-                <span>Full Stack Developer</span>,
+                I'm an <span>Austin</span> based{" "}
+                <span>Full Stack Developer.</span>
               </h3>
             </Typist>
             <hr />
