@@ -23,7 +23,7 @@ class Footer extends Component {
             <ul className="copyright">
               <li>
                 &copy; Copyright 2021{" "}
-                <a title="Orkun Saglam" href="">
+                <a title="Orkun Saglam" href="https://orkunsaglam.dev/">
                   Orkun Saglam
                 </a>
               </li>
