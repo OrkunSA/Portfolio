@@ -70,7 +70,7 @@ class Header extends Component {
           preload="auto"
           width="100%"
           height="100%"
-          playsInline=""
+          playsinline=""
         >
           <source src="/videos/mixkit-view-of-the-horizon-in-the-sea-while-a-sailboat-4477.mp4" />
         </video>
