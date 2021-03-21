@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import axios from "axios";
+import Swal from "sweetalert2";
 
 class Contact extends Component {
   constructor() {
@@ -28,26 +28,34 @@ class Contact extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    this.setState({ status: "Sending" });
-    axios({
-      method: "POST",
-      url: "http://localhost:3001/contact",
-      data: this.state,
-    }).then((response) => {
-      if (response.data.status === "sent") {
-        alert("Message Sent");
-        this.setState({
-          name: "",
-          email: "",
-          subject: "",
-          message: "",
-          status: "Submit",
-        });
-      } else if (response.data.status === "failed") {
-        alert("Message Failed");
-      }
+    const templateId = "template_i1o2uei";
+    this.sendFeedback(templateId, {
+      subject: this.state.subject,
+      message: this.state.message,
+      name: this.state.name,
+      email: this.state.email,
     });
   }
+
+  sendFeedback = (templateId, variables) => {
+    window.emailjs
+      .send("service_qif15mh", templateId, variables)
+      .then((res) => {
+        // Email successfully sent alert
+        Swal.fire({
+          title: "Email Successfully Sent",
+          icon: "success",
+        });
+      })
+      // Email Failed to send Error alert
+      .catch((err) => {
+        Swal.fire({
+          title: "Email Failed to Send",
+          icon: "error",
+        });
+        console.error("Email Error:", err);
+      });
+  };
 
   render() {
     if (this.props.data) {
